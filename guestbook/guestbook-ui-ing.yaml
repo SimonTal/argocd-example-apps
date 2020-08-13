@@ -1,0 +1,12 @@
+kind: Ingress
+apiVersion: extensions/v1beta1
+metadata:
+  name: guestbook-ui-ing
+spec:
+  rules:
+    - http:
+        paths:
+          - path: /guestbook
+            backend:
+              serviceName: guestbook-ui
+              servicePort: 8092

@@ -3,7 +3,7 @@ apiVersion: extensions/v1beta1
 metadata:
   name: guestbook-ui-ing
   annotations:
-    traefik.ingress.kubernetes.io/rewrite-target: /guestbook
+    traefik.ingress.kubernetes.io/rewrite-target: /
 spec:
   rules:
     - http:

@@ -6,7 +6,8 @@ metadata:
     traefik.ingress.kubernetes.io/rewrite-target: /
 spec:
   rules:
-    - http:
+    - host: www.latnomis.com
+      http:
         paths:
           - path: /guestbook
             backend:

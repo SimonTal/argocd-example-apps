@@ -6,10 +6,10 @@ metadata:
     traefik.ingress.kubernetes.io/rewrite-target: /
 spec:
   rules:
-    - host: www.latnomis.com
+    - host: guestbook.latnomis.com
       http:
         paths:
-          - path: /guestbook
+          - path: /
             backend:
               serviceName: guestbook-ui
               servicePort: 8092
